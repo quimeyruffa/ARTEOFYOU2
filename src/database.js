@@ -1,5 +1,5 @@
 const moongose = require('mongoose');
-const { database } = require('./keys');
+
 
 moongose.connect(MONGODB_URI,{
     useNewUrlParser:true
