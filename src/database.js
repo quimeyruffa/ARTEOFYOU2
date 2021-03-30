@@ -1,7 +1,8 @@
 const moongose = require('mongoose');
+const {config} = require('dotenv');
+config()
 
-
-moongose.connect(MONGODB_URI,{
+moongose.connect(process.env.MONGODB_URI,{
     useNewUrlParser:true
 })
 .then(db => console.log('db is connected'))
