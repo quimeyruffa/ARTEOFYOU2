@@ -1,34 +1,52 @@
-<h1> Notes App NodeMongo </h1>
-This is a basic App to manage simple Notes on the web using Javascript Technologies like Nodejs, Mongodb, and other related technologies.
+<h1> Pictures App NodeMongo </h1>
+This is a basic App to manage pictures on the web using Javascript Technologies like Nodejs, Mongodb, and other related technologies.
 
 This app can do:
 
-CRUD Operations: create/read/update/delete Notes
-Allows a user to do login and save his personal notes
-Screenshot
+. CRUD Operations: create/read/delete Pictures
+. Allows a user to do login and save his personal pictures
 
-
-Environment Variables
-This app needs the following environment Variables
-
-MONGODB_HOST this is the Mongodb URI string
-MONGODB_DATABASE Mongodb database name
-NODE_ENV node environment
-Docker
+<h1>Docker</h1>
 you can run a container for development
 
 npm install
 docker-compose up
-Default User
+
+<h1> Heroku </h1>
+you can see the app on the web 
+https://arteofyou.herokuapp.com/
+
+ <h1> ATENCION </h1>
+In the event of a failure with the views or with the installation, you can install the dependencies manually
+
+npm install 
+
+npm install 
+"@handlebars/allow-prototype-access",
+    "bcryptjs",
+    "connect-flash",
+    "dotenv",
+    "ember-truth-helpers",
+    "errorhandler",
+    "express",
+    "express-handlebars",
+    "express-session",
+    "fs-extra",
+    "md5",
+    "moment",
+    "mongoose",
+    "morgan",
+    "multer",
+    "node",
+    "passport",
+    "passport-local"
+    
+npm start 
+
+<h1>Default User</h1>
 when the app is lauched, this will create an Admin user with the following credentials:
 
-email: admin@localhost
-password: adminpassword
-Recursos
-Materia Bootswatch
-CSS Background uiGradients
-Tutorial
-This app was created with educational purposes, so you can found the tutorials in the following links:
+email: quimeyzoe86@gmail.com
+password: quimeyruffa
 
-Version 2, new tutorial made in 2020 and these are old tutorials about this app
-Version 1.0.0
+<h2>Version 1.0.0</h2>
