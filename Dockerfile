@@ -1,14 +1,12 @@
-FROM node:15
+FROM node:current-slim
 
-RUN mkdir -p /usr/src/app 
+WORKDIR /src
 
-WORKDIR /usr/src/app
-
-COPY package*.json ./
+COPY package*.json /src
 
 RUN npm install 
 
-COPY . .
+COPY . /src
 
 EXPOSE 3001
 
