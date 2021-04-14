@@ -1,4 +1,4 @@
-Notes App NodeMongo
+<h1> Notes App NodeMongo </h1>
 This is a basic App to manage simple Notes on the web using Javascript Technologies like Nodejs, Mongodb, and other related technologies.
 
 This app can do:
