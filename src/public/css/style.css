@@ -1,6 +1,64 @@
 body{
-    background: #dcdde1;
+    background: #172a79;
 }
 .navbar-brand b{
     font-size: 3rem;
 }
+.navbar{
+   background-color: RGB(37,39,46);
+}
+#navegador ul{
+  
+    list-style-type: none;
+    text-align: center;
+ }
+ #navegador li{
+    display: inline;
+    float:right;
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 0.4rem;
+    
+ }
+ #navegador li a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #666;
+    background-color: black;
+    text-decoration: none;
+    
+ }
+ #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+ #login-body-card{
+    background-color: RGB(245,245,239);
+    text-align: center;
+    border-radius: 5%;
+ }
+#accountRegister{
+   background-color: #f3f3eb;
+}
+#boton-signup{
+   background-color:#543c5c00 ;
+   border: 3px solid #543c5c;
+   color: #543c5c;
+   border-radius: 6rem;
+}
+#boton-signup:hover{
+   background-color:#d4c8d4 ;
+   border: #d4c8d4;
+}
+#boton-signin{
+   background-color:#543c5c00 ;
+   border: 3px solid #543c5c;
+   color: #543c5c;
+   border-radius: 6rem;
+}
+#boton-signin:hover{
+   background-color:#d4c8d4 ;
+   border: 3px solid #d4c8d4 ;
+   border: #d4c8d4;
+   }

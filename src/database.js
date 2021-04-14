@@ -4,7 +4,9 @@ const {config} = require('dotenv');
 config()
 
 moongose.connect(process.env.MONGODB_URI || database.URI ,{
-    useNewUrlParser:true
+    useNewUrlParser:true,
+    useCreateIndex:true,
+    useUnifiedTopology: true
 })
 .then(db => console.log('db is connected'))
 .catch(err => console.log(err));

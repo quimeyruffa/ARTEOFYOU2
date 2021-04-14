@@ -43,11 +43,12 @@ ctrl.create = async (req, res) => {
                 console.log('aca toy', 1)
                 const Img = new Image({
                     title: req.body.title,
+                    user:req.user.id,
                     description: req.body.description,
                     filename: imageURL + ext
                 })
                 await Img.save()
-                res.redirect('/')
+                res.redirect('/home')
 
             } else {
                 await fs.unlink(imagePath);
@@ -87,9 +88,10 @@ ctrl.remove = async (req, res) => {
    console.log(image.filename)
     if (image){
         await fs.unlink(path.resolve('./src/public/upload/'+image.filename));
-        await Comment.deleteOne({image_id: image._id})
+        await Comment.deleteOne({image_id: req.params.image_id})
         await image.remove();
         res.json(true)
+        res.redirect('/home')
     }
 }
 

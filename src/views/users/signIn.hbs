@@ -1,0 +1,23 @@
+<div class="row">
+    <div class=" mx-auto">
+        <div id="login-body-card" class="card-body">
+            <div style={width: 100%; height: 100%;} class="col-12">
+                <video src="https://res.cloudinary.com/dv8hvjcim/video/upload/v1618377286/dev_setups/arteofyou_2_b1aw6u.mp4" autoplay muted ></video>    
+            </div>
+            
+            <form action="/users/signIn" method="POST">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <br>
+                <button id="boton-signin" class="btn btn-primary btn-block">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

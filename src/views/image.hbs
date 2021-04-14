@@ -1,9 +1,8 @@
 <div class="card">
     <div class="card-header d-flex justify-content-between aling-items-center">
         <h2 style="color: black;">{{image.title}}</h2>
-        <button class="btn btn-danger" id="btn-delete" data-id="{{image._id}}">
-            <i class="fa fa-times"></i> Delete
-        </button>
+       {{#ifEqual user.id image.user image._id}}
+        {{/ifEqual}}
     </div>
     <div class="card-body">
         <p>{{image.description}}</p>
